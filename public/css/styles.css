@@ -1,0 +1,263 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow-y: auto; /* Ensure the body can scroll */
+}
+
+.page-container {
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+    margin: 20px 0; /* Add vertical margin for spacing */
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.page {
+    width: 100%;
+    height: auto; /* Allow each page to have auto height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 20px;
+    margin-bottom: 20px; /* Add margin bottom for spacing between pages */
+}
+
+.page1 {
+    background: url('https://inv.punakawandigital.id/wp-content/uploads/2024/01/Picture1-4-1-1.webp') no-repeat center center;
+    background-size: cover;
+}
+
+.header {
+    text-align: center;
+    color: #b89167;
+    margin-bottom: 20px;
+}
+
+.image-container {
+    width: 200px;
+    height: 200px;
+    background-image: url('https://inv.punakawandigital.id/wp-content/uploads/2024/01/5-FILEminimizer-1-1.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover; /* Optional: ensures the image covers the entire container */
+    border-radius: 90%;
+    position: relative;
+}
+.image-container img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    position: relative;
+    left: 80px;
+    top: 30px;
+}
+
+.details h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 3em;
+    color: #b89167;
+    margin: 10px 0;
+}
+.details h2 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2em;
+    color: #b89167;
+    margin: 10px 0;
+}
+
+.details p {
+    color: #b89167;
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.countdown div {
+    margin: 10px 10px;
+    border-radius: 10px;
+    background-color: #b89167;
+    padding: 10px;
+}
+
+.date p {
+    color: rgb(0, 0, 0);
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+.save-the-date {
+    background-color: #b89167;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.page2, .page3, .page4 {
+    background-color: #fff;
+    padding: 20px;
+    padding-bottom: 60px;
+}
+
+.svg-container img {
+    width: 150px;
+    margin: 20px 0;
+}
+
+.love-story h2, .save-the-date-banner h2, .live-streaming h2, .gallery-banner h2, .couple-digital h2, .comment-section h2 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2.5em;
+    color: #b89167;
+    margin: 20px 0;
+}
+
+.story {
+    margin: 20px 0;
+}
+
+.event-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gallery-section {
+    max-width: 450px;
+    margin: auto;
+}
+.gallery-slider {
+    margin: 20px;
+}
+.gallery-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.event-card{
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+.event-card h2{
+    font-family: 'Great Vibes', cursive;
+    color: #b89167;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.event-card p {
+    color: #666;
+    font-size: 1em;
+}
+
+.map-container {
+    margin: auto;
+}
+
+.live-streaming p, .couple-digital p, .comment-section p {
+    color: #666;
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.btn-primary {
+    background-color: #b89167;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: calc(100% - 20px);
+    max-width: 300px;
+}
+
+.icons a.active {
+    background-color: red;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+.icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #e0c1a3;
+    border-radius: 50%;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.icons a:hover {
+    background-color: #fff;
+    color: #b89167;
+    animation: bounce 0.5s linear infinite alternate;
+}
+
+.icons a i {
+    font-size: 20px;
+}
+
+.comment-section {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.comment-section form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.comment-section input, .comment-section textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.comment-section button {
+    align-self: flex-start;
+}
