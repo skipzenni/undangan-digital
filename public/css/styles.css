@@ -29,16 +29,18 @@ body {
 }
 
 .initial-header h2 {
-    font-family: 'Great Vibes', cursive;
     font-size: 2em;
-    color: #b89167;
+    color: #fff;
+    font-size: xx-large;
     margin: 10px 0;
+    font-weight: bold;
 }
 
 .initial-header h1 {
     font-family: 'Great Vibes', cursive;
     font-size: 3em;
-    color: #b89167;
+    font-weight: lighter;
+    color: #ffffff;
     margin: 10px 0;
 }
 
@@ -56,7 +58,7 @@ body {
 }
 
 .initial-details p {
-    color: #b89167;
+    color: #fff;
     font-size: 1.2em;
     margin: 10px 0;
 }
@@ -74,7 +76,7 @@ body {
     max-width: 500px;
     width: 100%;
     height: auto;
-    margin: 20px 0; /* Add vertical margin for spacing */
+    /* margin: 20px 0;  */
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
@@ -106,7 +108,8 @@ body {
 .image-container {
     width: 200px;
     height: 200px;
-    background-image: url('https://inv.punakawandigital.id/wp-content/uploads/2024/01/5-FILEminimizer-1-1.jpg');
+    background-image: url('https://raw.githubusercontent.com/skipzenni/undangan-digital/main/public/assets/Bulat.png');
+    /* background-image: url('https://inv.punakawandigital.id/wp-content/uploads/2024/01/5-FILEminimizer-1-1.jpg'); */
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover; /* Optional: ensures the image covers the entire container */
@@ -114,6 +117,26 @@ body {
     position: relative;
 }
 .image-container img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    position: relative;
+    left: 80px;
+    top: 30px;
+}
+.image-container-female {
+    width: 200px;
+    height: 200px;
+    background-image: url('https://raw.githubusercontent.com/skipzenni/undangan-digital/main/public/assets/Bulat.png');
+    /* background-image: url('https://inv.punakawandigital.id/wp-content/uploads/2024/01/5-FILEminimizer-1-1.jpg'); */
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover; /* Optional: ensures the image covers the entire container */
+    border-radius: 90%;
+    position: relative;
+}
+.image-container-female img {
     border-radius: 50%;
     width: 150px;
     height: 150px;
@@ -198,15 +221,25 @@ body {
 }
 
 .gallery-section {
-    max-width: 450px;
-    margin: auto;
-}
-.gallery-slider {
-    margin: 20px;
-}
-.gallery-image img {
+    position: relative;
+    padding: 20px;
+    background-color: #f8f8f8;
+    /* Adjust the width and height as needed */
     width: 100%;
-    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.gallery-slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.gallery-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 .event-card{
@@ -255,7 +288,7 @@ body {
     position: fixed;
     bottom: 50px;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%);
     background-color: #fff;
     padding: 10px;
     border-radius: 25px;
@@ -263,7 +296,42 @@ body {
     width: calc(100% - 20px);
     max-width: 300px;
 }
-
+@media (min-width: 320px) {
+    .icons {
+        left: 50%; /* Change the horizontal position when the screen size is 567px or less */
+    }
+    .gallery-section {
+        max-width: 190px;
+        margin: auto;
+    }
+}
+@media (min-width: 400px) {
+    .icons {
+        left: 50%; /* Change the horizontal position when the screen size is 567px or less */
+    }
+    .gallery-section {
+        max-width: 190px;
+        margin: auto;
+    }
+}
+@media (min-width: 700px) {
+    .icons {
+        left: 50%; /* Change the horizontal position when the screen size is 567px or less */
+    }
+    .gallery-section {
+        max-width: 190px;
+        margin: auto;
+    }
+}
+@media (min-width: 801px) {
+    .icons {
+        left: 50%; /* Change the horizontal position when the screen size is 567px or less */
+    }
+    .gallery-section {
+        max-width: 250px;
+        margin: auto;
+    }
+}
 .icons a.active {
     background-color: red;
 }
